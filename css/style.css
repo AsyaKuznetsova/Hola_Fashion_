@@ -1,0 +1,705 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
+
+*,
+*::after,
+*::before {
+    margin: 0;
+    padding: 0;
+
+}
+
+h2 {
+    max-width: 810px;
+}
+
+
+.container {
+    max-width: 1400px;
+    margin: 0 auto;
+    position: relative;
+    overflow-x: hidden;
+}
+
+.h-center {
+    display: flex;
+    justify-content: center;
+
+}
+
+/* Menu */
+
+.menu1 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+}
+
+
+
+.list_menu ul {
+    display: flex;
+    align-items: center;
+    list-style-type: none;
+    margin-top: 10px;
+
+}
+
+.list_menu li {
+    margin-right: 56px;
+    font-size: 20px;
+}
+
+.list_menu a {
+    text-decoration: none;
+    color: black;
+}
+
+@media (min-width:510px) {
+    .logo {
+        margin-right: 230px;
+    }
+}
+
+.menu__link {
+    font-size: 20px;
+    position: relative;
+    display: inline-block;
+    outline: none;
+}
+
+.menu__link::after {
+    content: "";
+    display: block;
+    position: absolute;
+    bottom: -10px;
+    height: 3px;
+    width: 100%;
+    background-color: #91916C;
+    transform: scaleX(0);
+    transition: transform 0.3s ease-in-out;
+    transform-origin: left center;
+}
+
+.menu__link:hover::after,
+.menu__link:focus::after {
+    transform: scaleX(1);
+
+
+}
+
+.burger-btn {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 21px;
+    width: 30px;
+}
+
+.burger-line {
+    background-color: #91916C;
+    height: 5px;
+    width: 100%;
+}
+
+.burger__menu {
+    background-color: #c8e8c3ab;
+    width: 220px;
+    height: 250px;
+    position: absolute;
+    top: 30px;
+    right: -30px;
+    display: none;
+    z-index: 10;
+    font-size: 18px;
+
+    transform: translateX(100%);
+    transition: all 0.4s ease-in;
+}
+
+.burger__menu--active {
+    transform: translateX(0%);
+}
+
+/* Ads */
+.big-text {
+    font-family: "Playfair Display", serif;
+    color: #E5A985;
+    margin-top: 50px;
+    font-size: 56px;
+    font-weight: bold;
+}
+
+.small-text {
+    font-size: 24px;
+    line-height: 45px;
+    margin-top: 40px;
+}
+
+.but-email {
+    margin-top: 70px;
+}
+
+.email {
+    background-color: #E5E5E5;
+    border: 0px;
+    border-top-left-radius: 15px;
+    border-bottom-left-radius: 15px;
+    color: #C4C4C4;
+    font-size: 20px;
+    padding-left: 25px;
+    width: 465px;
+    height: 58px;
+}
+
+.shop-now {
+    background-color: #91916C;
+    color: white;
+    font-size: 20px;
+    font-weight: 400;
+    border: 0;
+    border-top-right-radius: 15px;
+    border-bottom-right-radius: 15px;
+    height: 58px;
+    width: 160px;
+    transition: all 0.3s ease-in-out;
+}
+
+.shop-now:hover,
+.shop-now:focus {
+    background-color: #bbbb91;
+    font-size: 24px;
+
+}
+
+/* Product */
+.product {
+    padding-top: 84px;
+    background-color: #E1E1C2;
+}
+
+.product-h {
+    color: #91916C;
+    font-size: 32px;
+    font-weight: bold;
+    text-align: center;
+}
+
+.line-line {
+    width: 288px;
+    height: 3px;
+    background-color: #91916C;
+    margin-top: 20px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.title-product {
+    color: #65653E;
+    font-family: "Playfair Display", serif;
+    font-size: 48px;
+    text-align: center;
+    font-weight: bold;
+    margin-top: 39px;
+    letter-spacing: 3px;
+    line-height: 140%;
+}
+
+.girl-in-sunrise {
+    display: block;
+    margin: auto;
+    margin-top: 54px;
+}
+
+.p-product {
+    color: #333333;
+    font-size: 20px;
+    font-weight: bold;
+    text-align: center;
+    margin-top: 56px;
+    padding-bottom: 80px;
+}
+
+.slider {
+    position: relative;
+}
+
+.prev-btn,
+.next-btn {
+    position: absolute;
+    top: 50%;
+    height: 58px;
+    width: 58px;
+    transform: translateY(-50%);
+}
+
+.prev-btn {
+    left: 20px;
+
+}
+
+.next-btn {
+    right: 20px;
+}
+
+button {
+    background-color: transparent;
+    border: none;
+    padding: 0;
+    margin: 0;
+
+}
+
+/* SERVICES */
+
+.services-h {
+    color: #91916C;
+    font-size: 32px;
+    font-weight: bold;
+    text-align: center;
+    margin-top: 95px;
+
+}
+
+.title-services {
+    color: #E5A985;
+    font-family: "Playfair Display", serif;
+    font-size: 48px;
+    text-align: center;
+    font-weight: bold;
+    margin-top: 39px;
+    letter-spacing: 2px;
+    line-height: 140%;
+    margin-bottom: 70px;
+}
+
+.p-service {
+    text-align: center;
+    font-size: 24px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+.p-service1 {
+    text-align: center;
+    font-size: 24px;
+    color: white;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    margin-left: 15px;
+    margin-right: 15px;
+
+}
+.card-row{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-top: 30px;
+
+}
+.card {
+    background-color: #FAE3D8;
+    border: none;
+    border-radius: 20px;
+    transition: transform 0.5s ease-in;
+    margin: 15px;
+    width: 360px;
+    height: 485px;
+    overflow: hidden;
+}
+
+.img-service1{
+    width: 100%;
+    height: 100%;
+    border-radius: 20px;
+    object-fit: cover;
+    display: block;
+}
+.card:hover,
+.card:focus {
+    transform: scale(1.1);
+}
+
+/*Blog*/
+
+.blog {
+    margin-top: 50px;
+    background-color: #FFEFE7;
+    padding-top: 30px;
+}
+
+.card1 {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    padding: 50px;
+}
+
+.title-blog {
+    color: #795744;
+    font-family: "Playfair Display", serif;
+    font-size: 48px;
+    text-align: center;
+    font-weight: bold;
+    margin-top: 39px;
+    letter-spacing: 2px;
+}
+
+.line-line-2 {
+    background-color: #bd957e;
+    width: 288px;
+    height: 3px;
+    margin-top: 20px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.blog-h {
+    color: #bd957e;
+    font-size: 32px;
+    font-weight: bold;
+    text-align: center;
+    margin-top: 95px;
+}
+
+.card1 {
+    margin-bottom: 1.5rem;
+}
+
+.text-blog {
+    margin-left: 20px;
+    font-size: 20px;
+}
+
+@media (max-width: 1400px) {
+    .email {
+        width: 350px;
+    }
+
+    .shop-now {
+        width: 135px;
+        font-size: 19px;
+
+
+    }
+
+    .shop-now:hover,
+    .shop-now:focus {
+        font-size: 20px;
+        width: 130px;
+    }
+}
+
+@media (max-width: 1200px) {
+
+    .prev-btn {
+        left: 20px;
+
+    }
+
+    .next-btn {
+        right: 20px;
+    }
+
+    .big-text {
+        margin-left: 100px;
+    }
+
+    .small-text {
+        margin-left: 100px;
+    }
+
+    .email {
+        width: 235px;
+        margin-left: 100px;
+        padding: 30px;
+    }
+
+    .shop-now {
+        width: 115px;
+        font-size: 20px;
+
+    }
+
+    .shop-now:hover,
+    .shop-now:focus {
+        font-size: 22px;
+    }
+
+    .list_menu {
+        white-space: nowrap;
+    }
+}
+
+@media (max-width: 992px) {
+    .big-info {
+        text-align: center;
+    }
+
+    .but-email {
+        margin-bottom: 50px;
+    }
+
+
+    .list_menu {
+        position: absolute;
+        top: 60px;
+        left: 0;
+        background-color: #fff;
+        width: 100%;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        padding: 20px;
+        display: none;
+        flex-direction: column;
+        z-index: 1;
+    }
+
+    .list_menu ul {
+        flex-direction: column;
+    }
+
+    .burger-btn {
+        display: flex;
+    }
+
+    .prev-btn {
+        left: -2px;
+
+    }
+
+    .next-btn {
+        right: -2px;
+    }
+
+    .card1 {
+        padding: 30px;
+
+    }
+
+}
+
+@media (max-width: 935px) {
+    .img-btn {
+        display: none;
+    }
+
+    .girl-in-sunrise {
+        position: relative;
+    }
+}
+
+@media (max-width: 870px) {
+    .girl-in-sunrise {
+        width: 700px;
+        height: 400px;
+    }
+
+
+}
+
+@media (max-width: 768px) {
+
+
+
+    .prev-btn {
+        left: -2px;
+
+    }
+
+
+    .next-btn {
+        right: -2px;
+    }
+
+    .info-photo {
+        display: none;
+    }
+
+    .big-text {
+        margin: 0;
+        margin-top: 20px;
+        font-size: 45px;
+    }
+
+    .small-text {
+        margin: 0;
+        margin-top: 20px;
+    }
+
+    .email {
+        margin-left: 0;
+    }
+
+    .girl-in-sunrise {
+        width: 500px;
+        height: 300px;
+    }
+}
+
+
+
+
+@media (max-width: 576px) {
+
+ 
+  
+
+    .title-services,
+    .title-product,
+    .title-blog {
+        font-size: 40px;
+    }
+
+    .girl-in-sunrise {
+        width: 404px;
+        height: 228px;
+    }
+}
+
+@media (max-width: 420px) {
+    .email {
+        margin-left: 0;
+        width: 200px;
+    }
+
+    .card1 {
+        flex-direction: column;
+    }
+
+    .text-blog {
+        margin-top: 25px;
+        text-align: justify;
+        margin-left: 0px;
+    }
+
+    .p-service,
+    .p-service1 {
+        font-size: 20px;
+        line-height: normal;
+        margin: 15px;
+
+    }
+
+    .title-services,
+    .title-product,
+    .title-blog {
+        font-size: 32px;
+    }
+
+    .girl-in-sunrise {
+        width: 280px;
+        height: 200px;
+    }
+    .card{
+        height: 80%;
+      }
+  
+
+
+ 
+    .p-product {
+        font-size: 16px;
+    }
+}
+
+@media(max-width: 360px) {
+    .email {
+        margin-left: 0;
+        width: 150px;
+    }
+
+}
+
+@media (max-width: 320px) {
+
+    .info-photo {
+        display: none;
+    }
+
+    .big-text {
+        margin: 0;
+        margin-top: 20px;
+        font-size: 45px;
+    }
+
+    .small-text {
+        margin: 0;
+        margin-top: 20px;
+    }
+
+    .title-blog {
+        font-size: 40px;
+    }
+
+    .p-service,
+    .p-service1 {
+        padding: 7px;
+    }
+
+    .shop-now,
+    .email {
+        font-size: 19px;
+
+    }
+
+    .shop-now:hover,
+    .shop-now:focus {
+        width: 115px;
+        font-size: 20px;
+    }
+    .p-service,
+    .p-service1 {
+        font-size: 18px;
+        line-height: normal;
+        margin: 15px;
+
+}
+}
+
+.menu1 {
+    position: relative;
+    z-index: 100;
+    background-color: white;
+}
+
+.burger-menu {
+    transition: all .4s;
+    position: relative;
+}
+
+.burger-menu {
+    display: none;
+}
+
+.burger-menu--active {
+    transition: all .4s;
+    display: block;
+    z-index: 95;
+    position: fixed;
+    top: 72px;
+    left: 0;
+    background: white;
+    width: 100%;
+    height: fit-content;
+    box-shadow: 0 5px 5px rgb(0 0 0 /5%);
+    padding-top: 20px;
+}
+
+.burger__menu_item {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.burger-menu .menu__link {
+    color: #919170;
+    text-decoration: none;
+
+}
+
+.burger__menu_item {
+    list-style: none;
+}
